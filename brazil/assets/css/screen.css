@@ -1,0 +1,56 @@
+/*yahoo reset http://developer.yahoo.com/yui/reset/*/
+/* line 2, ../sass/screen.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+/* line 6, ../sass/screen.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 10, ../sass/screen.scss */
+fieldset, img {
+  border: 0; }
+
+/* line 13, ../sass/screen.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+/* line 17, ../sass/screen.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 20, ../sass/screen.scss */
+caption, th {
+  text-align: left; }
+
+/* line 23, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+/* line 27, ../sass/screen.scss */
+q:before, q:after {
+  content: ''; }
+
+/* line 30, ../sass/screen.scss */
+abbr, acronym {
+  border: 0; }
+
+/*end reset*/
+/* line 35, ../sass/screen.scss */
+body {
+  width: 300px;
+  margin: 0 auto;
+  font-family: "helvetica neue",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0 40px; }
+
+/* line 44, ../sass/screen.scss */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0 6px;
+  color: #9d9d9d; }

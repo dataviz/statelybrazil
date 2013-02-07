@@ -21,15 +21,16 @@
    -ms-font-feature-settings: "liga", "dlig"; 
   overflow: hidden;
   width: 300px;
+  height: 340px;
   display: block;
   margin: 0 auto;
   padding: 0;
   list-style: none;	
-  li { 
+  li {
     float: left;
     margin: -20% 0 0 -100%;
     position: relative;
-    left: 101%;
+    left: 150%;
     width: 100%;
     cursor: default;
     -webkit-transition: all 1s ease-in;

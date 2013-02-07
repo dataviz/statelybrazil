@@ -4,3 +4,17 @@
   border-radius: 10px;
   border-top: 1px solid #dddddd;
 }
+#plain.brazil {
+  li {
+    color: #ABC;
+    &:nth-child(2n+2) {
+      color: #CBA;
+    }
+    &:nth-child(3n+4) {
+      color: #BAC;
+    }
+    &:nth-child(3n+5) {
+      color: #BCA;
+    }
+  }
+}

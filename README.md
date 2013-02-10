@@ -1,125 +1,132 @@
-#Stately
-Stately is a symbol font that makes is easy to create a map of the United States using only HTML and CSS. Each state can be styled independently with CSS for making simple visualizations. And since it's a font, it scales bigger and smaller while staying sharp as a tack.
+# GENERAL DISCLAIMER
+The original [Stately](https://github.com/intridea/stately) is copyrighted by [Intridea](http://www.intridea.com/) and you can find the original here » [Stately](https://github.com/intridea/stately)
 
-##Files
-    map.svg      - SVG map used to create the font
-    assets\font  - Folder containing the web-font files
-    assets\sass  - Folder containing basic Sass files, including both Stately setup and stately.html demo customizations
-    assets\css   - Folder containing compiled CSS files
-    stately.html - Basic Demo
-    stately.svg  - SVG font file
-    stately.ttf  - TrueType font file
-    
+# StatelyBrazil
+StatelyBrazil is the Brazilian version [copied and adapted] of [Stately](https://github.com/intridea/stately). StatelyBrazil makes it easier to create maps for data visualization of Brazil using only HTML & CSS. Each state can be styled independently with CSS for making simple visualizations. And since it's a font, it scales whithout losing definition.
 
-##What is Stately?
-Each state is a glyph within the font. Each state is positioned and sized relative to the the rest of the states, so that when each character is stacked on top of one another, it creates a full map.
-The pertinent characters are uppercase A-Z and lowercase a-z with lowercase y generating the District of Columbia and lowercase z generating a full US map.
-For modern browsers ligatures are available and a state's abbreviation is its ligature. For example, "va" generates the glyph of the state of Virginia and 'dc' the District of Columbia. Additionally, the ligature "usa" produces a character of the full US map.
+## Files
+    statelybrazil/original-map.svg      - Original SVG map used to create the font
+    statelybrazil/statelybrazil.svg     - The SVG font file
+    statelybrazil/statelybrazil.ttf     - TrueType font file - converted from the SVG using [FreeFontConverter](http://www.freefontconverter.com/index.php)
+    statelybrazil/assets/font           - Folder containing the @font-face ready files - exported using [FontSquirrel @font-face generator](http://www.fontsquirrel.com/fontface/generator)
+    statelybrazil/assets/sass           - Folder containing basic SASS files, including both StatelyBrazil setup and demo
+    statelybrazil/assets/css            - Folder containing compiled CSS files
+    statelybrazil/statelybrazil.html    - Basic Demo
+    The original Stately files were kept in for reference.
 
-##Basic Use Case
-You can use stately however you like, but some base Sass/CSS and HTML is included.
-Download and add the Stately folder to your project which includes the base CSS and the web font files. Grab the stately folder and add it to your project. Then add the stately.css to the head of your document.
+## How it Works?
+StatelyBrazil is a symbol font were the letters are formed by the shapes of the states of Brazil. Like it's American counterpart, each letter corresponds to a state, in alphabetical order by the state acronym.
 
-`<link rel="stylesheet" href="assets/css/stately.css">`
+### Reference of States
+    AC · A · Acre
+    AL · B · Alagoas
+    AP · C · Amapá
+    AM · D · Amazonas
+    BA · E · Bahia
+    CE · F · Ceará
+    DF · G · Distrito Federal
+    ES · H · Espírito Santo
+    GO · I · Goiás
+    MA · J · Maranhão
+    MT · K · Mato Grosso
+    MS · L · Mato Grosso do Sul
+    MG · M · Minas Gerais
+    PA · N · Pará
+    PB · O · Paraíba
+    PR · P · Paraná
+    PE · Q · Pernambuco
+    PI · R · Piauí
+    RJ · S · Rio de Janeiro
+    RN · T · Rio Grande do Norte
+    RS · U · Rio Grande do Sul
+    RO · V · Rondônia
+    RR · W · Roraima
+    SC · X · Santa Catarina
+    SP · Y · São Paulo
+    SE · Z · Sergipe
+    TO · a · Tocantins
+
+
+## Basic Use Case
+1. Download StatelyBrazil to your computer.
+2. Copy the `statelybrazil/assets/` and `statelybrazil/assets/` to your project public folder.
+3. Add the `statelybrazil.css` to the head of your document.
+``<link rel="stylesheet" href="assets/css/statelybrasil.css">``
 
 Then add this markup to the page:
+```html
+<ul class="statelybrazil"> 
+  <li data-state-acronym="AC" data-state-name="Acre"                 class="statelybrazil-state-ac statelybrazil-state">A</li>
+  <li data-state-acronym="AL" data-state-name="Alagoas"              class="statelybrazil-state-al statelybrazil-state">B</li>
+  <li data-state-acronym="AP" data-state-name="Amapá"                class="statelybrazil-state-ap statelybrazil-state">C</li>
+  <li data-state-acronym="AM" data-state-name="Amazonas"             class="statelybrazil-state-am statelybrazil-state">D</li>
+  <li data-state-acronym="BA" data-state-name="Bahia"                class="statelybrazil-state-ba statelybrazil-state">E</li>
+  <li data-state-acronym="CE" data-state-name="Ceará"                class="statelybrazil-state-ce statelybrazil-state">F</li>
+  <li data-state-acronym="DF" data-state-name="Distrito Federal"     class="statelybrazil-state-df statelybrazil-state">G</li>
+  <li data-state-acronym="ES" data-state-name="Espírito Santo"       class="statelybrazil-state-es statelybrazil-state">H</li>
+  <li data-state-acronym="GO" data-state-name="Goiás"                class="statelybrazil-state-go statelybrazil-state">I</li>
+  <li data-state-acronym="MA" data-state-name="Maranhão"             class="statelybrazil-state-ma statelybrazil-state">J</li>
+  <li data-state-acronym="MT" data-state-name="Mato Grosso"          class="statelybrazil-state-mt statelybrazil-state">K</li>
+  <li data-state-acronym="MS" data-state-name="Mato Grosso do Sul"   class="statelybrazil-state-ms statelybrazil-state">L</li>
+  <li data-state-acronym="MG" data-state-name="Minas Gerais"         class="statelybrazil-state-mg statelybrazil-state">M</li>
+  <li data-state-acronym="PA" data-state-name="Pará"                 class="statelybrazil-state-pa statelybrazil-state">N</li>
+  <li data-state-acronym="PB" data-state-name="Paraíba"              class="statelybrazil-state-pb statelybrazil-state">O</li>
+  <li data-state-acronym="PR" data-state-name="Paraná"               class="statelybrazil-state-pr statelybrazil-state">P</li>
+  <li data-state-acronym="PE" data-state-name="Pernambuco"           class="statelybrazil-state-pe statelybrazil-state">Q</li>
+  <li data-state-acronym="PI" data-state-name="Piauí"                class="statelybrazil-state-pi statelybrazil-state">R</li>
+  <li data-state-acronym="RJ" data-state-name="Rio de Janeiro"       class="statelybrazil-state-rj statelybrazil-state">S</li>
+  <li data-state-acronym="RN" data-state-name="Rio Grande do Norte"  class="statelybrazil-state-rn statelybrazil-state">T</li>
+  <li data-state-acronym="RS" data-state-name="Rio Grande do Sul"    class="statelybrazil-state-rs statelybrazil-state">U</li>
+  <li data-state-acronym="RO" data-state-name="Rondônia"             class="statelybrazil-state-ro statelybrazil-state">V</li>
+  <li data-state-acronym="RR" data-state-name="Roraima"              class="statelybrazil-state-rr statelybrazil-state">W</li>
+  <li data-state-acronym="SC" data-state-name="Santa Catarina"       class="statelybrazil-state-sc statelybrazil-state">X</li>
+  <li data-state-acronym="SP" data-state-name="São Paulo"            class="statelybrazil-state-sp statelybrazil-state">Y</li>
+  <li data-state-acronym="SE" data-state-name="Sergipe"              class="statelybrazil-state-se statelybrazil-state">Z</li>
+  <li data-state-acronym="TO" data-state-name="Tocantins"            class="statelybrazil-state-to statelybrazil-state">a</li>
+</ul>
+```
 
-    <ul class="stately"> 
-        <li data-state="al" class="al">A</li>
-        <li data-state="ak" class="ak">B</li>
-        <li data-state="ar" class="ar">C</li>						
-        <li data-state="az" class="az">D</li>
-        <li data-state="ca" class="ca">E</li>
-        <li data-state="co" class="co">F</li>
-        <li data-state="ct" class="ct">G</li>
-        <li data-state="de" class="de">H</li>
-        <li data-state="dc" class="dc">I</li>
-        <li data-state="fl" class="fl">J</li>
-        <li data-state="ga" class="ga">K</li>
-        <li data-state="hi" class="hi">L</li>
-        <li data-state="id" class="id">M</li>
-        <li data-state="il" class="il">N</li>
-        <li data-state="in" class="in">O</li>
-        <li data-state="ia" class="ia">P</li>
-        <li data-state="ks" class="ks">Q</li>
-        <li data-state="ky" class="ky">R</li>
-        <li data-state="la" class="la">S</li>
-        <li data-state="me" class="me">T</li>
-        <li data-state="md" class="md">U</li>
-        <li data-state="ma" class="ma">V</li>
-        <li data-state="mi" class="mi">W</li>
-        <li data-state="mn" class="mn">X</li>
-        <li data-state="ms" class="ms">Y</li>
-        <li data-state="mo" class="mo">Z</li>
-        <li data-state="mt" class="mt">a</li>
-        <li data-state="ne" class="ne">b</li>
-        <li data-state="nv" class="nv">c</li>
-        <li data-state="nh" class="nh">d</li>
-        <li data-state="nj" class="nj">e</li>
-        <li data-state="nm" class="nm">f</li>
-        <li data-state="ny" class="ny">g</li>
-        <li data-state="nc" class="nc">h</li>
-        <li data-state="nd" class="nd">i</li>
-        <li data-state="oh" class="oh">j</li>			
-        <li data-state="ok" class="ok">k</li>
-        <li data-state="or" class="or">l</li>
-        <li data-state="pa" class="pa">m</li>
-        <li data-state="ri" class="ri">n</li>
-        <li data-state="sc" class="sc">o</li>
-        <li data-state="sd" class="sd">p</li>
-        <li data-state="tn" class="tn">q</li>
-        <li data-state="tx" class="tx">r</li>
-        <li data-state="ut" class="ut">s</li>
-        <li data-state="va" class="va">t</li>
-        <li data-state="vt" class="vt">u</li>			
-        <li data-state="wa" class="wa">v</li>
-        <li data-state="wv" class="wv">w</li>
-        <li data-state="wi" class="wi">x</li>
-        <li data-state="wy" class="wy">y</li>
-    </ul>
-    
-Set the size and base map color in your CSS:
+### Set the size and base map color in your CSS:
+```css
+.statelybrazil {
+    width: 230px;     // width and font size must match 
+    font-size: 300px; // width and font size must match 
+    color: #808080;
+}
+```
 
-    .stately {
-      width: 300px;     //width and font size must match 
-  	  font-size: 300px; //width and font size must match 
-  	  color: #f0f0f0;
-    }
-    
-Style Individual State:
+### Style Individual State:
+```css
+.statelybrazil .statelybrazil-state-ac { 
+    color: #F00; // Yes, Acre exists!
+}
+```
 
-    .stately .va,
-    .stately .md,
-    .stately .dc { 
-       color: #FF0000;
-    }
-    
-If you are not using Sass for your project, you can use and edit the compiled CSS files. The included files have been compiled using the `expanded` output style for readability.
-    
-##Live Example
-
+## Live Example
 [Stately Microsite](http://intridea.github.com/stately/)
+[Stately Brazil Microsite](http://ltartari.github.com/statelybrazil/)
 
-##Resources
-
+## Resources
 [Free Online Font Converter](http://www.freefontconverter.com) - For converting SVG to TTF  
 [Font Squirrel](http://www.fontsquirrel.com/fontface/generator) - For converting TTF to web fonts (make sure you check 'no subsetting')  
 [Intridea Blog: How to Make Your Own Symbol Font](http://www.intridea.com/blog/2012/4/24/symbol-font) - A good starting place
-##Credits
 
-Created by Ben Markowitz at Intridea. 
+## Credits
+StatelyBrazil project by:
+* Leo Tartari
+  * [twitter](http://twitter.com/leotartari)
+  * [website](http://leotartari.com)
 
-Ben Markowitz  
-[twitter](http://www.twitter.com/bpmarkowitz)  
-[website](http://www.benmarkowitz.com)  
+Original Stately project created by Ben Markowitz at Intridea:
+* Ben Markowitz
+  * [twitter](http://www.twitter.com/bpmarkowitz)
+  * [website](http://www.benmarkowitz.com)
+* Intridea
+  * [website](http://www.intridea.com)
 
-Intridea  
-[website](http://www.intridea.com)  
-
-##License
-
+## License
 MIT License. See LICENSE for details.
 
-##Copyright
-
-Copyright (c) 2013 Intridea, Inc.
+## To Do
+* State acronyms in ligatures
+* One letter for the whole map of Brazil

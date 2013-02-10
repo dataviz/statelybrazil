@@ -6,15 +6,15 @@
 }
 #plain.brazil {
   li {
-    color: #ABC;
+    color: #b0b0b0;
     &:nth-child(2n+2) {
-      color: #CBA;
+      color: #DB9;
     }
     &:nth-child(3n+4) {
-      color: #BAC;
+      color: #B9D;
     }
     &:nth-child(3n+5) {
-      color: #BCA;
+      color: #BD9;
     }
   }
 }

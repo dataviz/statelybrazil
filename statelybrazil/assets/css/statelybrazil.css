@@ -8,7 +8,7 @@
   font-style: normal; }
 
 /* line 11, ../sass/_setup.scss */
-.stately {
+.statelybrazil {
   font: normal normal 300px/100% "statelybrazil";
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
@@ -26,7 +26,7 @@
   padding: 0;
   list-style-type: none; }
 /* line 28, ../sass/_setup.scss */
-.stately li {
+.statelybrazil .statelybrazil-state {
   float: left;
   margin: -20% 0 0 -100%;
   position: relative;
@@ -44,21 +44,21 @@
 /** Style customizations
 *************************************/
 /* line 1, ../sass/_customizations.scss */
-.stately {
+.statelybrazil {
   background: #f2f2f2;
   padding: 20px;
   border-radius: 10px;
   border-top: 1px solid #dddddd; }
 
 /* line 8, ../sass/_customizations.scss */
-#plain.brazil li {
+.statelybrazil.example .statelybrazil-state {
   color: #b0b0b0; }
 /* line 10, ../sass/_customizations.scss */
-#plain.brazil li:nth-child(2n+2) {
+.statelybrazil.example .statelybrazil-state:nth-child(2n+2) {
   color: #DB9; }
 /* line 13, ../sass/_customizations.scss */
-#plain.brazil li:nth-child(3n+4) {
+.statelybrazil.example .statelybrazil-state:nth-child(3n+4) {
   color: #B9D; }
 /* line 16, ../sass/_customizations.scss */
-#plain.brazil li:nth-child(3n+5) {
+.statelybrazil.example .statelybrazil-state:nth-child(3n+5) {
   color: #BD9; }

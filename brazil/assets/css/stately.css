@@ -1,7 +1,7 @@
 /** Stately setup
 *************************************/
 @font-face {
-  font-family: 'stately-webfont';
+  font-family: "stately-brazil";
   src: url("../font/brazil.eot");
   src: url("../font/brazil.eot?#iefix") format("embedded-opentype"), url("../font/brazil.woff") format("woff"), url("../font/brazil.ttf") format("truetype"), url("../font/brazil.svg#testfontRegular") format("svg");
   font-weight: normal;
@@ -9,7 +9,7 @@
 
 /* line 11, ../sass/_setup.scss */
 .stately {
-  font: normal normal 300px/100% "stately-webfont";
+  font: normal normal 300px/100% "stately-brazil";
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -20,18 +20,17 @@
   -ms-font-feature-settings: "liga" 1;
   -ms-font-feature-settings: "liga", "dlig";
   overflow: hidden;
-  width: 300px;
-  height: 340px;
+  width: 230px;
   display: block;
   margin: 0 auto;
   padding: 0;
-  list-style: none; }
-/* line 29, ../sass/_setup.scss */
+  list-style-type: none; }
+/* line 28, ../sass/_setup.scss */
 .stately li {
   float: left;
   margin: -20% 0 0 -100%;
   position: relative;
-  left: 150%;
+  left: 101%;
   width: 100%;
   cursor: default;
   -webkit-transition: all 1s ease-in;
@@ -53,13 +52,13 @@
 
 /* line 8, ../sass/_customizations.scss */
 #plain.brazil li {
-  color: #ABC; }
+  color: #b0b0b0; }
 /* line 10, ../sass/_customizations.scss */
 #plain.brazil li:nth-child(2n+2) {
-  color: #CBA; }
+  color: #DB9; }
 /* line 13, ../sass/_customizations.scss */
 #plain.brazil li:nth-child(3n+4) {
-  color: #BAC; }
+  color: #B9D; }
 /* line 16, ../sass/_customizations.scss */
 #plain.brazil li:nth-child(3n+5) {
-  color: #BCA; }
+  color: #BD9; }

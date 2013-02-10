@@ -1,0 +1,50 @@
+/** Stately setup
+*************************************/
+@font-face {
+  font-family: "statelybrazil";
+  src: url("../font/statelybrazil.eot");
+  src: url("../font/statelybrazil.eot?#iefix") format("embedded-opentype"), url("../font/statelybrazil.woff") format("woff"), url("../font/statelybrazil.ttf") format("truetype"), url("../font/statelybrazil.svg#testfontRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 11, ../sass/_setup.scss */
+.statelybrazil {
+  font: normal normal 450px/100% "statelybrazil";
+  font-size-adjust: none;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga" 1;
+  -ms-font-feature-settings: "liga", "dlig";
+  overflow: hidden;
+  width: 360px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none; }
+/* line 28, ../sass/_setup.scss */
+.statelybrazil .statelybrazil-state {
+  float: left;
+  margin: -20% 0 0 -100%;
+  position: relative;
+  left: 101%;
+  width: 100%;
+  cursor: default;
+  -webkit-transition: all 1s ease-in;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/** Style customizations
+*************************************/
+/* line 1, ../sass/_customizations.scss */
+.statelybrazil {
+  padding: 20px;
+  float: right;
+}

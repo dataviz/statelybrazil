@@ -1,459 +1,190 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<!--[if IE]>
-  <style>#shadow {display: none;}</style>
-<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>StatelyBrazil | The Brazilian version of the simple map font</title>
+    <meta name="description" content="Brazilian version of Stately simple map font.">
+    <meta name="viewport" content="width=device-width">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
-  <title>Stately | The simple map font</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <link rel="stylesheet" href="stately/stately.css">
-  <link rel="stylesheet" href="css/home_style.css">
-  <link rel="stylesheet" href="css/screen.css">
-  <link rel="stylesheet" href="css/media_queries.css">
-  <link rel="stylesheet" href="css/code.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/statelybrazil.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
+    <div id="root">
+      <header>
+        <div class="wrapper">
+          <div class="map-wrapper">
+            <ul id="brazil-map" class="statelybrazil">
+              <li data-state-acronym="AC" data-state-name="Acre"                 class="statelybrazil-state-ac statelybrazil-state">A</li>
+              <li data-state-acronym="AL" data-state-name="Alagoas"              class="statelybrazil-state-al statelybrazil-state">B</li>
+              <li data-state-acronym="AP" data-state-name="Amapá"                class="statelybrazil-state-ap statelybrazil-state">C</li>
+              <li data-state-acronym="AM" data-state-name="Amazonas"             class="statelybrazil-state-am statelybrazil-state">D</li>
+              <li data-state-acronym="BA" data-state-name="Bahia"                class="statelybrazil-state-ba statelybrazil-state">E</li>
+              <li data-state-acronym="CE" data-state-name="Ceará"                class="statelybrazil-state-ce statelybrazil-state">F</li>
+              <li data-state-acronym="DF" data-state-name="Distrito Federal"     class="statelybrazil-state-df statelybrazil-state">G</li>
+              <li data-state-acronym="ES" data-state-name="Espírito Santo"       class="statelybrazil-state-es statelybrazil-state">H</li>
+              <li data-state-acronym="GO" data-state-name="Goiás"                class="statelybrazil-state-go statelybrazil-state">I</li>
+              <li data-state-acronym="MA" data-state-name="Maranhão"             class="statelybrazil-state-ma statelybrazil-state">J</li>
+              <li data-state-acronym="MT" data-state-name="Mato Grosso"          class="statelybrazil-state-mt statelybrazil-state">K</li>
+              <li data-state-acronym="MS" data-state-name="Mato Grosso do Sul"   class="statelybrazil-state-ms statelybrazil-state">L</li>
+              <li data-state-acronym="MG" data-state-name="Minas Gerais"         class="statelybrazil-state-mg statelybrazil-state">M</li>
+              <li data-state-acronym="PA" data-state-name="Pará"                 class="statelybrazil-state-pa statelybrazil-state">N</li>
+              <li data-state-acronym="PB" data-state-name="Paraíba"              class="statelybrazil-state-pb statelybrazil-state">O</li>
+              <li data-state-acronym="PR" data-state-name="Paraná"               class="statelybrazil-state-pr statelybrazil-state">P</li>
+              <li data-state-acronym="PE" data-state-name="Pernambuco"           class="statelybrazil-state-pe statelybrazil-state">Q</li>
+              <li data-state-acronym="PI" data-state-name="Piauí"                class="statelybrazil-state-pi statelybrazil-state">R</li>
+              <li data-state-acronym="RJ" data-state-name="Rio de Janeiro"       class="statelybrazil-state-rj statelybrazil-state">S</li>
+              <li data-state-acronym="RN" data-state-name="Rio Grande do Norte"  class="statelybrazil-state-rn statelybrazil-state">T</li>
+              <li data-state-acronym="RS" data-state-name="Rio Grande do Sul"    class="statelybrazil-state-rs statelybrazil-state">U</li>
+              <li data-state-acronym="RO" data-state-name="Rondônia"             class="statelybrazil-state-ro statelybrazil-state">V</li>
+              <li data-state-acronym="RR" data-state-name="Roraima"              class="statelybrazil-state-rr statelybrazil-state">W</li>
+              <li data-state-acronym="SC" data-state-name="Santa Catarina"       class="statelybrazil-state-sc statelybrazil-state">X</li>
+              <li data-state-acronym="SP" data-state-name="São Paulo"            class="statelybrazil-state-sp statelybrazil-state">Y</li>
+              <li data-state-acronym="SE" data-state-name="Sergipe"              class="statelybrazil-state-se statelybrazil-state">Z</li>
+              <li data-state-acronym="TO" data-state-name="Tocantins"            class="statelybrazil-state-to statelybrazil-state">a</li>
+            </ul>
+            <div id="flash-text"></div>
+          </div>
+          <h1>StatelyBrazil</h1>
+          <p>StatelyBrazil is the Brazilian version of Intridea's <a href="https://github.com/intridea/stately">Stately</a>. StatelyBrazil makes it easier to create maps for data visualization of Brazil using only HTML &amp; CSS. Each state can be styled independently with CSS and, since it's a font, it scales whithout losing definition.</p>
+          <nav class="github-links">
+            <a href="https://github.com/ltartari/statelybrazil" class="button">Fork this on Github</a>
+            <a href="https://github.com/ltartari/statelybrazil/issues" class="button">Report a Problem</a>
+            <a href="https://github.com/intridea/stately" class="button">Original Stately Project on Github</a>
+          </nav>
+        </div>
+      </header>
 
-  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/m6Lez9WflF3tDDcWVkR43JhhHws/intridea.github.com/21671.css" type="text/css" />
+      <div class="main">
+        <div class="wrapper">
+          <h2>How it Works?</h2>
+          <p>StatelyBrazil is a symbol font were the letters are formed by the shapes of the states of Brazil. Like it's American counterpart, each letter corresponds to a state, in alphabetical order by the state acronym.</p>
 
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
-  
-</head>
-<body>
-  <div id="container">
-
-  <header class="cf">
-		<section>
-			  <a href="http://www.intridea.com" id="tag"></a>
-		<div id="title">
-			<ul class="stately" id="header"> 
-				<li data-state="al" id="al">A</li>
-				<li data-state="ak" id="ak">B</li>
-				<li data-state="ar" id="ar">C</li>						
-				<li data-state="az" id="az">D</li>
-				<li data-state="ca" id="ca">E</li>
-				<li data-state="co" id="co">F</li>
-				<li data-state="ct" id="ct">G</li>
-				<li data-state="de" id="de">H</li>
-				<li data-state="dc" id="dc">I</li>
-				<li data-state="fl" id="fl">J</li>
-				<li data-state="ga" id="ga">K</li>
-				<li data-state="hi" id="hi">L</li>
-				<li data-state="id" id="id">M</li>
-				<li data-state="il" id="il">N</li>
-				<li data-state="in" id="in">O</li>
-				<li data-state="ia" id="ia">P</li>
-				<li data-state="ks" id="ks">Q</li>
-				<li data-state="ky" id="ky">R</li>
-				<li data-state="la" id="la">S</li>
-				<li data-state="me" id="me">T</li>
-				<li data-state="md" id="md">U</li>
-				<li data-state="ma" id="ma">V</li>
-				<li data-state="mi" id="mi">W</li>
-				<li data-state="mn" id="mn">X</li>
-				<li data-state="ms" id="ms">Y</li>
-				<li data-state="mo" id="mo">Z</li>
-				<li data-state="mt" id="mt">a</li>
-				<li data-state="ne" id="ne">b</li>
-				<li data-state="nv" id="nv">c</li>
-				<li data-state="nh" id="nh">d</li>
-				<li data-state="nj" id="nj">e</li>
-				<li data-state="nm" id="nm">f</li>
-				<li data-state="ny" id="ny">g</li>
-				<li data-state="nc" id="nc">h</li>
-				<li data-state="nd" id="nd">i</li>
-				<li data-state="oh" id="oh">j</li>			
-				<li data-state="ok" id="ok">k</li>
-				<li data-state="or" id="or">l</li>
-				<li data-state="pa" id="pa">m</li>
-				<li data-state="ri" id="ri">n</li>
-				<li data-state="sc" id="sc">o</li>
-				<li data-state="sd" id="sd">p</li>
-				<li data-state="tn" id="tn">q</li>
-				<li data-state="tx" id="tx">r</li>
-				<li data-state="ut" id="ut">s</li>
-				<li data-state="va" id="va">t</li>
-				<li data-state="vt" id="vt">u</li>			
-				<li data-state="wa" id="wa">v</li>
-				<li data-state="wv" id="wv">w</li>
-				<li data-state="wi" id="wi">x</li>
-				<li data-state="wy" id="wy">y</li>
-			</ul>
-			<!-- <ul class="stately" id="shadow"> 
-				<li data-state="al" id="al">A</li>
-				<li data-state="ak" id="ak">B</li>
-				<li data-state="ar" id="ar">C</li>						
-				<li data-state="az" id="az">D</li>
-				<li data-state="ca" id="ca">E</li>
-				<li data-state="co" id="co">F</li>
-				<li data-state="ct" id="ct">G</li>
-				<li data-state="de" id="de">H</li>
-				<li data-state="dc" id="dc">I</li>
-				<li data-state="fl" id="fl">J</li>
-				<li data-state="ga" id="ga">K</li>
-				<li data-state="hi" id="hi">L</li>
-				<li data-state="id" id="id">M</li>
-				<li data-state="il" id="il">N</li>
-				<li data-state="in" id="in">O</li>
-				<li data-state="ia" id="ia">P</li>
-				<li data-state="ks" id="ks">Q</li>
-				<li data-state="ky" id="ky">R</li>
-				<li data-state="la" id="la">S</li>
-				<li data-state="me" id="me">T</li>
-				<li data-state="md" id="md">U</li>
-				<li data-state="ma" id="ma">V</li>
-				<li data-state="mi" id="mi">W</li>
-				<li data-state="mn" id="mn">X</li>
-				<li data-state="ms" id="ms">Y</li>
-				<li data-state="mo" id="mo">Z</li>
-				<li data-state="mt" id="mt">a</li>
-				<li data-state="ne" id="ne">b</li>
-				<li data-state="nv" id="nv">c</li>
-				<li data-state="nh" id="nh">d</li>
-				<li data-state="nj" id="nj">e</li>
-				<li data-state="nm" id="nm">f</li>
-				<li data-state="ny" id="ny">g</li>
-				<li data-state="nc" id="nc">h</li>
-				<li data-state="nd" id="nd">i</li>
-				<li data-state="oh" id="oh">j</li>			
-				<li data-state="ok" id="ok">k</li>
-				<li data-state="or" id="or">l</li>
-				<li data-state="pa" id="pa">m</li>
-				<li data-state="ri" id="ri">n</li>
-				<li data-state="sc" id="sc">o</li>
-				<li data-state="sd" id="sd">p</li>
-				<li data-state="tn" id="tn">q</li>
-				<li data-state="tx" id="tx">r</li>
-				<li data-state="ut" id="ut">s</li>
-				<li data-state="va" id="va">t</li>
-				<li data-state="vt" id="vt">u</li>			
-				<li data-state="wa" id="wa">v</li>
-				<li data-state="wv" id="wv">w</li>
-				<li data-state="wi" id="wi">x</li>
-				<li data-state="wy" id="wy">y</li>
-			</ul> -->
-			<h1>Stately</h1>
-		</div>
-		<div id="quick_links" class="cf">
-			<span class="button_outer"><a href="https://github.com/intridea/stately" alt="" class="button">Fork this on Github</a></span>
-			<span class="button_outer"><a href="https://github.com/intridea/stately" alt=""  class="button">Full Documentation</a></span>
-			<span class="button_outer"><a href="https://github.com/intridea/stately/issues" alt=""  class="button">Report a Problem</a></span>				
-		</div>
-		</section>
-  </header>
-  <div id="header_border"></div>
-  <div id="content_container">
-  <div role="main" id="content" class="cf">
-	<div class="col">
-		<h2>What is Stately?</h2>
-		<p>Stately is a symbol font that makes it easy to create a map of the United States using only HTML and CSS. Each state can be styled independently with CSS for making simple visualizations. And since it's a font, it scales bigger and smaller while staying sharp as a tack.</p>
-				
-		<h2>How does it work?</h2>
-		<p>Each state is a glyph within the font. Each state is positioned and sized relative to the the rest of the states, so that when each character is stacked on top of one another, it creates a full map.</p>
-		<p>The pertinent characters are uppercase <strong>A-Z</strong> and lowercase <strong>a-y</strong> which generate all the states (including the District of Columbia). Additionally lowercase <strong>z</strong> generates a character of the full US map. </p>
-		<p>For modern browsers ligatures are available and a state's abbreviation is it's ligature. For example, "<strong>va</strong>" generates the glyph of the state of Virginia and "<strong>dc</strong>" the District of Columbia. Additionally, the ligature "<strong>usa</strong>" produces a character of the full US map.</p>
-
-
-    <h2>Basic Use Case</h2>
-    <p>Download and add the Stately folder to your project which includes the base CSS and the web font files. and add the stately.css to the head of your document</p>
-    <pre class="code">
-		  &lt;link rel="stylesheet" href="stately/stately.css"&gt;
-	</pre>
-    <p>Then add this sample markup to your page</p>
-    <pre class="code" id="markup">
-			<div id="view_all">Expand</div>
-			<div id="collapse">Collapse</div>
-
-		&lt;ul class="stately"&gt;<br/>
-		&nbsp;&nbsp;&lt;li data-state="al" id="al"&gt;A&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ak" id="ak"&gt;B&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ar" id="ar"&gt;C&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="az" id="az"&gt;D&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ca" id="ca"&gt;E&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="co" id="co"&gt;F&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ct" id="ct"&gt;G&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="de" id="de"&gt;H&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="dc" id="dc"&gt;I&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="fl" id="fl"&gt;J&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ga" id="ga"&gt;K&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="hi" id="hi"&gt;L&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="id" id="id"&gt;M&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="il" id="il"&gt;N&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="in" id="in"&gt;O&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ia" id="ia"&gt;P&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ks" id="ks"&gt;Q&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ky" id="ky"&gt;R&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="la" id="la"&gt;S&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="me" id="me"&gt;T&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="md" id="md"&gt;U&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ma" id="ma"&gt;V&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="mi" id="mi"&gt;W&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="mn" id="mn"&gt;X&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ms" id="ms"&gt;Y&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="mo" id="mo"&gt;Z&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="mt" id="mt"&gt;a&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ne" id="ne"&gt;b&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="nv" id="nv"&gt;c&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="nh" id="nh"&gt;d&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="nj" id="nj"&gt;e&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="nm" id="nm"&gt;f&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ny" id="ny"&gt;g&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="nc" id="nc"&gt;h&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="nd" id="nd"&gt;i&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="oh" id="oh"&gt;j&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ok" id="ok"&gt;k&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="or" id="or"&gt;l&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="pa" id="pa"&gt;m&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ri" id="ri"&gt;n&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="sc" id="sc"&gt;o&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="sd" id="sd"&gt;p&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="tn" id="tn"&gt;q&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="tx" id="tx"&gt;r&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="ut" id="ut"&gt;s&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="va" id="va"&gt;t&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="vt" id="vt"&gt;u&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="wa" id="wa"&gt;v&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="wv" id="wv"&gt;w&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="wi" id="wi"&gt;x&lt;/li&gt;&nbsp;<br/>	
-		&nbsp;&nbsp;&lt;li data-state="wy" id="wy"&gt;y&lt;/li&gt;&nbsp;<br/>	
-				&lt;/ul&gt;
-				<div class="overlap"></div>
-	</pre>                      
-    <p>Set the size and base map color in your CSS.</p>
-	<pre class="code">
-		ul.stately {<br/>
-		&nbsp;&nbsp;	width:300px; //width and font size must match <br/>
-		&nbsp;&nbsp;	font-size:300px;<br/>
-		&nbsp;&nbsp;	color:#f0f0f0;<br/>
-		}
-	</pre>
-	<p>Style individual states</p>
-	<pre class="code">
-		.stately li#va,</br>
-		.stately li#md,</br>
-		.stately li#dc { </br>
-			&nbsp;&nbsp;color: #FF0000;</br>
-		}
-	</pre>
-
-	</div>
-	
-	<div class="col">
-		<h2>Samples</h2>
-		<h3>Intrideans</h3>
-		<ul class="stately" id="intrideans"> 
-			<li data-state="al" id="al">A</li>
-			<li data-state="ak" id="ak">B</li>
-			<li data-state="ar" id="ar">C</li>						
-			<li data-state="az" id="az">D</li>
-			<li data-state="ca" id="ca">E</li>
-			<li data-state="co" id="co">F</li>
-			<li data-state="ct" id="ct">G</li>
-			<li data-state="de" id="de">H</li>
-			<li data-state="dc" id="dc">I</li>
-			<li data-state="fl" id="fl">J</li>
-			<li data-state="ga" id="ga">K</li>
-			<li data-state="hi" id="hi">L</li>
-			<li data-state="id" id="id">M</li>
-			<li data-state="il" id="il">N</li>
-			<li data-state="in" id="in">O</li>
-			<li data-state="ia" id="ia">P</li>
-			<li data-state="ks" id="ks">Q</li>
-			<li data-state="ky" id="ky">R</li>
-			<li data-state="la" id="la">S</li>
-			<li data-state="me" id="me">T</li>
-			<li data-state="md" id="md">U</li>
-			<li data-state="ma" id="ma">V</li>
-			<li data-state="mi" id="mi">W</li>
-			<li data-state="mn" id="mn">X</li>
-			<li data-state="ms" id="ms">Y</li>
-			<li data-state="mo" id="mo">Z</li>
-			<li data-state="mt" id="mt">a</li>
-			<li data-state="ne" id="ne">b</li>
-			<li data-state="nv" id="nv">c</li>
-			<li data-state="nh" id="nh">d</li>
-			<li data-state="nj" id="nj">e</li>
-			<li data-state="nm" id="nm">f</li>
-			<li data-state="ny" id="ny">g</li>
-			<li data-state="nc" id="nc">h</li>
-			<li data-state="nd" id="nd">i</li>
-			<li data-state="oh" id="oh">j</li>			
-			<li data-state="ok" id="ok">k</li>
-			<li data-state="or" id="or">l</li>
-			<li data-state="pa" id="pa">m</li>
-			<li data-state="ri" id="ri">n</li>
-			<li data-state="sc" id="sc">o</li>
-			<li data-state="sd" id="sd">p</li>
-			<li data-state="tn" id="tn">q</li>
-			<li data-state="tx" id="tx">r</li>
-			<li data-state="ut" id="ut">s</li>
-			<li data-state="va" id="va">t</li>
-			<li data-state="vt" id="vt">u</li>			
-			<li data-state="wa" id="wa">v</li>
-			<li data-state="wv" id="wv">w</li>
-			<li data-state="wi" id="wi">x</li>
-			<li data-state="wy" id="wy">y</li>	
-		</ul>
-
-		<h3>2012 Presidential Election</h3>
-		<ul class="stately" id="election"> 
-			<li data-state="al" id="al">A</li>
-			<li data-state="ak" id="ak">B</li>
-			<li data-state="ar" id="ar">C</li>						
-			<li data-state="az" id="az">D</li>
-			<li data-state="ca" id="ca">E</li>
-			<li data-state="co" id="co">F</li>
-			<li data-state="ct" id="ct">G</li>
-			<li data-state="de" id="de">H</li>
-			<li data-state="dc" id="dc">I</li>
-			<li data-state="fl" id="fl">J</li>
-			<li data-state="ga" id="ga">K</li>
-			<li data-state="hi" id="hi">L</li>
-			<li data-state="id" id="id">M</li>
-			<li data-state="il" id="il">N</li>
-			<li data-state="in" id="in">O</li>
-			<li data-state="ia" id="ia">P</li>
-			<li data-state="ks" id="ks">Q</li>
-			<li data-state="ky" id="ky">R</li>
-			<li data-state="la" id="la">S</li>
-			<li data-state="me" id="me">T</li>
-			<li data-state="md" id="md">U</li>
-			<li data-state="ma" id="ma">V</li>
-			<li data-state="mi" id="mi">W</li>
-			<li data-state="mn" id="mn">X</li>
-			<li data-state="ms" id="ms">Y</li>
-			<li data-state="mo" id="mo">Z</li>
-			<li data-state="mt" id="mt">a</li>
-			<li data-state="ne" id="ne">b</li>
-			<li data-state="nv" id="nv">c</li>
-			<li data-state="nh" id="nh">d</li>
-			<li data-state="nj" id="nj">e</li>
-			<li data-state="nm" id="nm">f</li>
-			<li data-state="ny" id="ny">g</li>
-			<li data-state="nc" id="nc">h</li>
-			<li data-state="nd" id="nd">i</li>
-			<li data-state="oh" id="oh">j</li>			
-			<li data-state="ok" id="ok">k</li>
-			<li data-state="or" id="or">l</li>
-			<li data-state="pa" id="pa">m</li>
-			<li data-state="ri" id="ri">n</li>
-			<li data-state="sc" id="sc">o</li>
-			<li data-state="sd" id="sd">p</li>
-			<li data-state="tn" id="tn">q</li>
-			<li data-state="tx" id="tx">r</li>
-			<li data-state="ut" id="ut">s</li>
-			<li data-state="va" id="va">t</li>
-			<li data-state="vt" id="vt">u</li>			
-			<li data-state="wa" id="wa">v</li>
-			<li data-state="wv" id="wv">w</li>
-			<li data-state="wi" id="wi">x</li>
-			<li data-state="wy" id="wy">y</li>
-		</ul>
-
-		<h3>Presidential States</h3>
-		<ul class="stately" id="presidents"> 
-			<li data-state="al" id="al">A</li>
-			<li data-state="ak" id="ak">B</li>
-			<li data-state="ar" id="ar">C</li>						
-			<li data-state="az" id="az">D</li>
-			<li data-state="ca" id="ca">E</li>
-			<li data-state="co" id="co">F</li>
-			<li data-state="ct" id="ct">G</li>
-			<li data-state="de" id="de">H</li>
-			<li data-state="dc" id="dc">I</li>
-			<li data-state="fl" id="fl">J</li>
-			<li data-state="ga" id="ga">K</li>
-			<li data-state="hi" id="hi">L</li>
-			<li data-state="id" id="id">M</li>
-			<li data-state="il" id="il">N</li>
-			<li data-state="in" id="in">O</li>
-			<li data-state="ia" id="ia">P</li>
-			<li data-state="ks" id="ks">Q</li>
-			<li data-state="ky" id="ky">R</li>
-			<li data-state="la" id="la">S</li>
-			<li data-state="me" id="me">T</li>
-			<li data-state="md" id="md">U</li>
-			<li data-state="ma" id="ma">V</li>
-			<li data-state="mi" id="mi">W</li>
-			<li data-state="mn" id="mn">X</li>
-			<li data-state="ms" id="ms">Y</li>
-			<li data-state="mo" id="mo">Z</li>
-			<li data-state="mt" id="mt">a</li>
-			<li data-state="ne" id="ne">b</li>
-			<li data-state="nv" id="nv">c</li>
-			<li data-state="nh" id="nh">d</li>
-			<li data-state="nj" id="nj">e</li>
-			<li data-state="nm" id="nm">f</li>
-			<li data-state="ny" id="ny">g</li>
-			<li data-state="nc" id="nc">h</li>
-			<li data-state="nd" id="nd">i</li>
-			<li data-state="oh" id="oh">j</li>			
-			<li data-state="ok" id="ok">k</li>
-			<li data-state="or" id="or">l</li>
-			<li data-state="pa" id="pa">m</li>
-			<li data-state="ri" id="ri">n</li>
-			<li data-state="sc" id="sc">o</li>
-			<li data-state="sd" id="sd">p</li>
-			<li data-state="tn" id="tn">q</li>
-			<li data-state="tx" id="tx">r</li>
-			<li data-state="ut" id="ut">s</li>
-			<li data-state="va" id="va">t</li>
-			<li data-state="vt" id="vt">u</li>			
-			<li data-state="wa" id="wa">v</li>
-			<li data-state="wv" id="wv">w</li>
-			<li data-state="wi" id="wi">x</li>
-			<li data-state="wy" id="wy">y</li>	
-		</ul>
-
-
-		<h2>Created By:</h2>
-		<div id="author" class="cf">
-			<section class="bio">
-				<h1>Ben Markowitz</h1>
-				<ul class="author-links cf">
-					<li class="icn_twitter"><a href="https://twitter.com/bpmarkowitz">Twitter</a></li>
-				</ul>
-				<p>Ben Markowitz is a UI and UX designer with Intridea, where he has worked with clients ranging from startups to Fortune 500 companies. Ben created Stately as a part of Intridea's SparkTime. When he is not working in Photoshop and Omnigraffle he likes to get his hands dirty in projects like this.</p>
-
-			</section>
-		</div>
-	</div>
-	
-  </div>
-  
-  <footer>
-	<section>
-	<a id="hiring" href="http://www.intridea.com/careers">We're Hiring!</a>
-	<span>Copyright &copy; 2013 <a href="http://www.intridea.com">Intridea</a>. Released under the MIT License on <a href="https://github.com/intridea/stately">GitHub</a>.</span>
-	<a id="footer_logo" href="http://www.intridea.com">Intridea.com</a>
-
-	</section>
-  </footer>
-</div>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  	
-
-  <script src="js/script.js"></script>
-
-  
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  
-</body>
+          <div class="column one-third-width">
+            <table>
+              <caption>Letter to State Reference List</caption>
+              <tr><td>AC</td><td>A</td><td>Acre</td></tr>
+              <tr><td>AL</td><td>B</td><td>Alagoas</td></tr>
+              <tr><td>AP</td><td>C</td><td>Amapá</td></tr>
+              <tr><td>AM</td><td>D</td><td>Amazonas</td></tr>
+              <tr><td>BA</td><td>E</td><td>Bahia</td></tr>
+              <tr><td>CE</td><td>F</td><td>Ceará</td></tr>
+              <tr><td>DF</td><td>G</td><td>Distrito Federal</td></tr>
+              <tr><td>ES</td><td>H</td><td>Espírito Santo</td></tr>
+              <tr><td>GO</td><td>I</td><td>Goiás</td></tr>
+              <tr><td>MA</td><td>J</td><td>Maranhão</td></tr>
+              <tr><td>MT</td><td>K</td><td>Mato Grosso</td></tr>
+              <tr><td>MS</td><td>L</td><td>Mato Grosso do Sul</td></tr>
+              <tr><td>MG</td><td>M</td><td>Minas Gerais</td></tr>
+              <tr><td>PA</td><td>N</td><td>Pará</td></tr>
+              <tr><td>PB</td><td>O</td><td>Paraíba</td></tr>
+              <tr><td>PR</td><td>P</td><td>Paraná</td></tr>
+              <tr><td>PE</td><td>Q</td><td>Pernambuco</td></tr>
+              <tr><td>PI</td><td>R</td><td>Piauí</td></tr>
+              <tr><td>RJ</td><td>S</td><td>Rio de Janeiro</td></tr>
+              <tr><td>RN</td><td>T</td><td>Rio Grande do Norte</td></tr>
+              <tr><td>RS</td><td>U</td><td>Rio Grande do Sul</td></tr>
+              <tr><td>RO</td><td>V</td><td>Rondônia</td></tr>
+              <tr><td>RR</td><td>W</td><td>Roraima</td></tr>
+              <tr><td>SC</td><td>X</td><td>Santa Catarina</td></tr>
+              <tr><td>SP</td><td>Y</td><td>São Paulo</td></tr>
+              <tr><td>SE</td><td>Z</td><td>Sergipe</td></tr>
+              <tr><td>TO</td><td>a</td><td>Tocantins</td></tr>
+            </table>
+          </div>
+          <div class="column two-thirds-width"
+            <h2>Basic Usage</h2>
+            <ol>
+              <li>
+                <h3>Download StatelyBrazil</h3>
+                <p>Grab the latest code from <a href="http://github.com/ltartari/statelybrazil">GitHub</a>.</p>
+              </li>
+              <li>
+                <h3>Copy the files</h3>
+                <p>Copy the <samp>CSS</samp> and <samp>FONT</samp> assets folder from <samp>statelybrazil/assets/</samp> and paste on your project's public folder.</p>
+              </li>
+              <li>
+                <h3>Add the StatelyBrazil to your project</h3>
+                <p>Add <samp>statelybrazil.css</samp> to the <samp>&lt;head&gt;</samp> of your document.</p>
+                <code>&lt;link rel="stylesheet" href="css/statelybrazil.css"&gt;</code>
+                </li>
+              <li>
+                <h3>Required Markup</h3>
+                <p>Add the code below to your HTML.</p>
+                <pre class="code-block"><code>
+&lt;ul class="statelybrazil example"&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="AC" data-state-name="Acre"                 class="statelybrazil-state-ac statelybrazil-state"&gt;A&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="AL" data-state-name="Alagoas"              class="statelybrazil-state-al statelybrazil-state"&gt;B&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="AP" data-state-name="Amapá"                class="statelybrazil-state-ap statelybrazil-state"&gt;C&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="AM" data-state-name="Amazonas"             class="statelybrazil-state-am statelybrazil-state"&gt;D&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="BA" data-state-name="Bahia"                class="statelybrazil-state-ba statelybrazil-state"&gt;E&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="CE" data-state-name="Ceará"                class="statelybrazil-state-ce statelybrazil-state"&gt;F&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="DF" data-state-name="Distrito Federal"     class="statelybrazil-state-df statelybrazil-state"&gt;G&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="ES" data-state-name="Espírito Santo"       class="statelybrazil-state-es statelybrazil-state"&gt;H&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="GO" data-state-name="Goiás"                class="statelybrazil-state-go statelybrazil-state"&gt;I&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="MA" data-state-name="Maranhão"             class="statelybrazil-state-ma statelybrazil-state"&gt;J&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="MT" data-state-name="Mato Grosso"          class="statelybrazil-state-mt statelybrazil-state"&gt;K&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="MS" data-state-name="Mato Grosso do Sul"   class="statelybrazil-state-ms statelybrazil-state"&gt;L&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="MG" data-state-name="Minas Gerais"         class="statelybrazil-state-mg statelybrazil-state"&gt;M&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="PA" data-state-name="Pará"                 class="statelybrazil-state-pa statelybrazil-state"&gt;N&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="PB" data-state-name="Paraíba"              class="statelybrazil-state-pb statelybrazil-state"&gt;O&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="PR" data-state-name="Paraná"               class="statelybrazil-state-pr statelybrazil-state"&gt;P&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="PE" data-state-name="Pernambuco"           class="statelybrazil-state-pe statelybrazil-state"&gt;Q&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="PI" data-state-name="Piauí"                class="statelybrazil-state-pi statelybrazil-state"&gt;R&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="RJ" data-state-name="Rio de Janeiro"       class="statelybrazil-state-rj statelybrazil-state"&gt;S&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="RN" data-state-name="Rio Grande do Norte"  class="statelybrazil-state-rn statelybrazil-state"&gt;T&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="RS" data-state-name="Rio Grande do Sul"    class="statelybrazil-state-rs statelybrazil-state"&gt;U&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="RO" data-state-name="Rondônia"             class="statelybrazil-state-ro statelybrazil-state"&gt;V&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="RR" data-state-name="Roraima"              class="statelybrazil-state-rr statelybrazil-state"&gt;W&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="SC" data-state-name="Santa Catarina"       class="statelybrazil-state-sc statelybrazil-state"&gt;X&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="SP" data-state-name="São Paulo"            class="statelybrazil-state-sp statelybrazil-state"&gt;Y&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="SE" data-state-name="Sergipe"              class="statelybrazil-state-se statelybrazil-state"&gt;Z&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li data-state-acronym="TO" data-state-name="Tocantins"            class="statelybrazil-state-to statelybrazil-state"&gt;a&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+                </code></pre>
+              </li>
+              <li>
+                <h3>Voilà!</h3>
+                <p>You should have a map on your screen.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="wrapper">
+          <h3>Original project created by:</h3>
+          <a href="https://twitter.com/bpmarkowitz">Ben Markowitz</a>
+          <p>Ben Markowitz is a UI and UX designer with Intridea, where he has worked with clients ranging from startups to Fortune 500 companies. Ben created Stately as a part of Intridea's SparkTime. When he is not working in Photoshop and Omnigraffle he likes to get his hands dirty in projects like this.</p>
+          <h3>StatelyBrazil created by:</h3>
+          <a href="https://twitter.com/leotartari">Leo Tartari</a>
+          <p>Leo Tartari is a freelancer experience designer.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-38367192-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
 </html>

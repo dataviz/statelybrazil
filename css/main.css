@@ -114,11 +114,15 @@ a {
   overflow: hidden;
 }
 header {
-  background: #FFCC29;
-  border-bottom: 10px solid #00A859;
+  background: #00A859;
+  border-bottom: 10px solid #FFCC29;
 }
 header h1 {
   padding-top: 3em;
+  color: #FFCC29;
+}
+header a {
+  color: white;
 }
 header nav {
   clear: both;
@@ -135,7 +139,7 @@ header .map-wrapper {
   color: #3e4095;
 }
 header .statelybrazil {
-  color: rgba(62,64,149,.9);
+  color: rgba(255,255,255,.1);
 }
 nav .button {
   border: .25em solid #00A859;

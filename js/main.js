@@ -12,7 +12,7 @@ var flash = function () {
   var flashedStateAcronym = flashedElement.data('state-acronym');
   var flashedText         = flashedStateName + ' (' + flashedStateAcronym + ')';
 
-  flashedElement.css('color', 'rgba(63,64,149,.'+(color+2)+')');
+  flashedElement.css('color', 'rgba(255,255,255,.'+(color+2)+')');
   $('#flash-text').text(flashedText);
   setTimeout(flash, 2000);
 }

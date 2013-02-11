@@ -142,13 +142,14 @@ header .statelybrazil {
   color: rgba(255,255,255,.1);
 }
 nav .button {
-  border: .25em solid #00A859;
-  color: #00A859;
+  border: .25em solid #FFF;
+  color: white;
   display: inline-block;
-  background: white;
+  background: #00A859;
   text-decoration: none;
   border-radius: 3em;
   padding: .5em 2em;
+  margin: 0 1em 0 0;
 }
 .code-block {
   background: #282828;

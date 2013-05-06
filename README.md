@@ -104,7 +104,8 @@ Then add this markup to the page:
 
 ## Live Example
 [Stately Microsite](http://intridea.github.com/stately/)
-[Stately Brazil Microsite](http://ltartari.github.com/statelybrazil/)
+
+[Stately Brazil Microsite](http://dataviz.github.com/statelybrazil/)
 
 ## Resources
 [Free Online Font Converter](http://www.freefontconverter.com) - For converting SVG to TTF  
